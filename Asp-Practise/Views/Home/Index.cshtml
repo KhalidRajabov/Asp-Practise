@@ -12,7 +12,7 @@
                 
                 @foreach (var item in Model.Slider)
                {
-                         <div class="single-slide item" style="background-image: url('@Url.Content($"~/img/slider/{@item.ImageUrl}")')">
+                         <div class="single-slide item" style="background-image: url('@Url.Content($"~/img/{@item.ImageUrl}")')">
                     <!-- Start Slider Content -->
                     <div class="slider-content-area">  
                         <div class="container">
