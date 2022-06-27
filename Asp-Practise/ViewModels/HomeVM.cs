@@ -11,5 +11,6 @@ namespace Asp_Practise.ViewModels
         public Banner Banners { get; set; }
         public Quotes Quote { get; set; }
         public List<Course> Courses { get; set; }
+        public List<Event> Events { get; set; }
     }
 }

@@ -31,6 +31,7 @@ namespace Asp_Practise.Controllers
             homevm.Banners=_context.Banners.FirstOrDefault();
             homevm.Quote = _context.Quote.FirstOrDefault();
             homevm.Courses= _context.Courses.Take(3).ToList();
+            homevm.Events=_context.Events.Take(4).ToList();
             return View(homevm);
         }
         public IActionResult SearchCourse(string search)
