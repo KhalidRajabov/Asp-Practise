@@ -1,0 +1,8 @@
+﻿@model List<Course>
+
+    @foreach (var item in Model)
+   {
+       <li class="d-flex" style="padding:0;margin:0;">
+           <a asp-controller="blogs" asp-route-id="@item.Id">@item.Name</a>
+       </li>
+   }

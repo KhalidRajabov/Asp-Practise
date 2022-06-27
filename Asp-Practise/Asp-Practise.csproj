@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Asp_Practise</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20220626221118_smallupdate.cs" />
+    <Compile Remove="Migrations\20220626221118_smallupdate.Designer.cs" />
+    <Compile Remove="Migrations\20220626221250_smallupdate2.cs" />
+    <Compile Remove="Migrations\20220626221250_smallupdate2.Designer.cs" />
+    <Compile Remove="Migrations\20220626221321_smallupdate3.cs" />
+    <Compile Remove="Migrations\20220626221321_smallupdate3.Designer.cs" />
+    <Compile Remove="Migrations\20220626221441_smallupdatefff.cs" />
+    <Compile Remove="Migrations\20220626221441_smallupdatefff.Designer.cs" />
+    <Compile Remove="Migrations\20220626221944_smallupdateff.cs" />
+    <Compile Remove="Migrations\20220626221944_smallupdateff.Designer.cs" />
+    <Compile Remove="Migrations\20220626222036_smallupdateffa.cs" />
+    <Compile Remove="Migrations\20220626222036_smallupdateffa.Designer.cs" />
+    <Compile Remove="Migrations\20220626222335_new.cs" />
+    <Compile Remove="Migrations\20220626222335_new.Designer.cs" />
+    <Compile Remove="Migrations\20220626223143_speaker.cs" />
+    <Compile Remove="Migrations\20220626223143_speaker.Designer.cs" />
+    <Compile Remove="Migrations\20220627131044_doesit.cs" />
+    <Compile Remove="Migrations\20220627131044_doesit.Designer.cs" />
+    <Compile Remove="Migrations\20220627132430_eventaddition.cs" />
+    <Compile Remove="Migrations\20220627132430_eventaddition.Designer.cs" />
+    <Compile Remove="Migrations\20220627204910_category_course.cs" />
+    <Compile Remove="Migrations\20220627204910_category_course.Designer.cs" />
+    <Compile Remove="Migrations\20220627205155_category_cours.cs" />
+    <Compile Remove="Migrations\20220627205155_category_cours.Designer.cs" />
+    <Compile Remove="Migrations\20220627210127_elgun.cs" />
+    <Compile Remove="Migrations\20220627210127_elgun.Designer.cs" />
+    <Compile Remove="Migrations\20220627212338_courseadded.cs" />
+    <Compile Remove="Migrations\20220627212338_courseadded.Designer.cs" />
+    <Compile Remove="Migrations\20220627212725_coursea.cs" />
+    <Compile Remove="Migrations\20220627212725_coursea.Designer.cs" />
+    <Compile Remove="Migrations\20220627212932_op.cs" />
+    <Compile Remove="Migrations\20220627212932_op.Designer.cs" />
+    <Compile Remove="Migrations\20220627213131_opa.cs" />
+    <Compile Remove="Migrations\20220627213131_opa.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+</Project>
