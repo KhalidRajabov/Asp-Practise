@@ -1,0 +1,18 @@
+﻿@model List<Blog>
+
+    @foreach (var item in Model)
+    {
+         <div class="single-post mb-30">
+                                    <div class="single-post-img">
+                                        <a href="blog-details.html"><img src="~/img/blog/@item.ImageUrl" width="110" alt="post">
+                                            <div class="blog-hover">
+                                                <i class="fa fa-link"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="single-post-content">
+                                        <h4><a href="blog-details.html">@item.Title</a></h4>
+                                        <p>@item.PublishInfo</p>
+                                    </div>
+                                </div>
+    }

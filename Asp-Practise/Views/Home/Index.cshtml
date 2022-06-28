@@ -137,49 +137,11 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-12 col-xs-12">
                         
-                        @foreach (var item in @Model.Events)
-                       {
-                           <div class="single-event mb-35">
-                            <div class="event-date">
-                                <h3><a href="event-details.html">20 <span>June</span></a></h3>
-                            </div>
-                            <div class="event-content text-left">
-                                <div class="event-content-left">
-                                    <h4><a href="event-details.html">@item.Title</a></h4>
-                                    <ul>
-                                        <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                        <li><i class="fa fa-map-marker"></i>@item.Venue</li>
-                                    </ul>
-                                </div>
-                                <div class="event-content-right">
-                                    <a class="default-btn" href="event-details.html">join now</a>
-                                </div>
-                            </div>
-                        </div>
-                       }
+                       @await Component.InvokeAsync("SMEvents", 0);
 
                     </div>
                     <div class="col-md-6 hidden-sm hidden-xs" style="display:flex; flex-direction:column-reverse;">
-                        @foreach (var item in @Model.Events)
-                       {
-                           <div class="single-event mb-35">
-                            <div class="event-date">
-                                <h3><a href="event-details.html">12 <span>June</span></a></h3>
-                            </div>
-                            <div class="event-content text-left">
-                                <div class="event-content-left">
-                                    <h4><a href="event-details.html">@item.Title</a></h4>
-                                    <ul>
-                                        <li><i class="fa fa-clock-o"></i>9.00 AM - 4.45 PM</li>
-                                        <li><i class="fa fa-map-marker"></i>@item.Venue</li>
-                                    </ul>
-                                </div>
-                                <div class="event-content-right">
-                                    <a class="default-btn" href="event-details.html">join now</a>
-                                </div>
-                            </div>
-                        </div>
-                       }
+                       @await Component.InvokeAsync("SMEvents", 4);
 
                     </div>
                 </div>
