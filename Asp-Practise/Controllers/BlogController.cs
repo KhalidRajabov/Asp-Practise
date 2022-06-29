@@ -32,5 +32,17 @@ namespace Asp_Practise.Controllers
 
             return PartialView("_BlogSearchPartial", courses);
         }
+
+        public IActionResult Details(int id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            Blog dbBlog = _context.Blogs.FirstOrDefault(p => p.Id == id);
+            if (dbBlog == null) return NotFound();
+
+            return View(dbBlog);
+        }
     }
 }

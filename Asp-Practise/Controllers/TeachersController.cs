@@ -32,5 +32,17 @@ namespace Asp_Practise.Controllers
 
             return PartialView("_TeacherSearchPartial", courses);
         }
+
+        public IActionResult Details(int id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            Teacher dbTeacher = _context.Teachers.FirstOrDefault(p => p.Id == id);
+            if (dbTeacher == null) return NotFound();
+
+            return View(dbTeacher);
+        }
     }
 }

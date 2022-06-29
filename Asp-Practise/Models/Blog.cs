@@ -6,5 +6,6 @@
         public string PublishInfo{ get; set; }
         public string Title { get; set; }
         public string ImageUrl { get; set; }
+        public string BlogDetail { get; set; }
     }
 }
