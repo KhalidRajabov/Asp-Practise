@@ -17,9 +17,9 @@ namespace Asp_Practise.ViewComponents
             _context = context;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync()
+        public async Task<IViewComponentResult> InvokeAsync(int take)
         {
-            List<Blog> blogs = _context.Blogs.ToList();
+            List<Blog> blogs = _context.Blogs.Take(take).ToList();
             return View(await Task.FromResult(blogs));
         }
     }
